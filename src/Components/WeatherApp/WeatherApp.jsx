@@ -6,7 +6,7 @@ function WeatherApp() {
   const [location, setLocation] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const apiKey = process.env.WEATHER_KEY;
+  const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
 
   const searchLocation = async (event) => {
     if (event.key === "Enter") {
